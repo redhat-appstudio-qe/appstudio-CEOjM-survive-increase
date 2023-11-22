@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-kaie
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-tenant/appstudio/devfile-sample-python-basic-kaie@sha256:ffdbfb4b14e8440a97fa6207812e9c5cd30450866c61260966e736643eda038d
+        name: my-python
+        resources: {}
+status: {}
