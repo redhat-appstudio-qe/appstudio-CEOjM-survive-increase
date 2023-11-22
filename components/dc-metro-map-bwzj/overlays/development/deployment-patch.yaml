@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-bwzj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/push-pyxis-tenant/appstudio/dc-metro-map-bwzj@sha256:4b55ca32a59b6531b1d66f6e14157eaa31a95b4ded4f29fd57ead57d2ce78048
+        name: my-nodejs
+        resources: {}
+status: {}
